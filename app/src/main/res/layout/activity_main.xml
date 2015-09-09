@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/rootview_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f9f9f9">
+
+    <LinearLayout
+        android:id="@+id/line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/work_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/no_corner_white"
+            android:text="作品 0"
+            android:textColor="#262626"
+            android:textSize="14sp"
+            />
+
+        <Button
+            android:id="@+id/calss_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/no_corner_white"
+            android:text="课程 1"
+            android:textColor="#262626"
+            android:textSize="14sp"
+            />
+
+        <Button
+            android:id="@+id/collection_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/no_corner_white"
+            android:text="收藏 2"
+            android:textColor="#262626"
+            android:textSize="14sp"
+            />
+
+        <Button
+            android:id="@+id/topic_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/no_corner_white"
+            android:text="话题 3"
+            android:textColor="#262626"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_line_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:weightSum="4">
+
+        <FrameLayout
+            android:id="@+id/pinnedIndicator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <ImageView style="@style/UserCenter.Indicator"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>
